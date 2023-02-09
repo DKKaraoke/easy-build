@@ -9,7 +9,7 @@ RUN apt-get update && apt-get -y upgrade
 RUN apt-get install -y gawk wget git-core diffstat unzip texinfo gcc-multilib \
         build-essential chrpath socat cpio python python-pip python-pexpect \
         xz-utils debianutils iputils-ping python-git python3-jinja2 libegl1-mesa libsdl1.2-dev \
-        pylint3 xterm
+        pylint xterm
 
 # Additional host packages required by poky/scripts/wic
 RUN apt-get install -y curl dosfstools mtools parted syslinux tree zip
